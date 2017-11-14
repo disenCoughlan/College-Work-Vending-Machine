@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="400" prefWidth="600" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vendingMachine.Controllers.VendingMachineController">
+    <GridPane translateY="10" AnchorPane.rightAnchor="0">
+        <Label fx:id="amountInsertedLabel" text="0.00E" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <Button onAction="#returnMoney" text="Refund" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+      <columnConstraints>
+         <ColumnConstraints />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints />
+         <RowConstraints />
+      </rowConstraints>
+    </GridPane>
+    <GridPane prefHeight="75" translateY="100" AnchorPane.rightAnchor="0">
+        <Button onAction="#selectCoinKey" text="5c" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <Button onAction="#selectCoinKey" text="10c" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        <Button onAction="#selectCoinKey" text="20c" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+        <Button onAction="#selectCoinKey" text="50c" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <Button onAction="#selectCoinKey" text="1E" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <Button onAction="#selectCoinKey" text="2E" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <columnConstraints>
+         <ColumnConstraints />
+         <ColumnConstraints />
+         <ColumnConstraints />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints />
+         <RowConstraints />
+      </rowConstraints>
+    </GridPane>
+    <GridPane prefHeight="100" translateY="175" AnchorPane.rightAnchor="1">
+        <Button onAction="#selectKey" text="1" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <Button onAction="#selectKey" text="2" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        <Button onAction="#selectKey" text="3" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+        <Button onAction="#selectKey" text="4" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <Button onAction="#selectKey" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <Button onAction="#selectKey" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+        <Button onAction="#selectKey" text="7" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <Button onAction="#selectKey" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <Button onAction="#selectKey" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+        <Button onAction="#selectKey" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <Button onAction="#clearSelection" text="N" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+        <Button onAction="#acceptSelection" text="Y" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+        <Label fx:id="selectedProductCode" text="" GridPane.rowIndex="4" />
+      <columnConstraints>
+         <ColumnConstraints />
+         <ColumnConstraints />
+         <ColumnConstraints />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+      </rowConstraints>
+    </GridPane>
+    <GridPane translateY="350" AnchorPane.rightAnchor="4">
+        <Button onAction="#openStock" text="Stock Page" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+      <columnConstraints>
+         <ColumnConstraints />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints />
+      </rowConstraints>
+    </GridPane>
+    <Label fx:id="selectionMessage" GridPane.rowIndex="4" />
+    <GridPane translateY="20" AnchorPane.leftAnchor="3">
+        <Label fx:id="image" />
+      <columnConstraints>
+         <ColumnConstraints />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints />
+      </rowConstraints>
+    </GridPane>
+       <ImageView fitHeight="365.0" fitWidth="299.0" layoutX="14.0" layoutY="31.0" preserveRatio="true" smooth="true">
+      <image>
+         <Image url="@../Images/merchant204_combiplusfood_2.jpg" />
+      </image>
+       </ImageView>
+   <Label layoutX="227.0" layoutY="31.0" text="Balance :" />
+   <Label layoutX="286.0" layoutY="31.0" text ="" fx:id="balance" />
+</AnchorPane>

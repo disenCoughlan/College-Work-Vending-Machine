@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.TextField?>
+<AnchorPane prefWidth="600.0" stylesheets="/vendingMachine/StyleSheets/App.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vendingMachine.Controllers.StockController">
+    <GridPane AnchorPane.topAnchor="1">
+        <GridPane GridPane.columnIndex="0" GridPane.rowIndex="0">
+            <Label text="Add Products"/>
+        </GridPane>
+        <GridPane GridPane.columnIndex="1" GridPane.rowIndex="0">
+            <Label text="Products"/>
+        </GridPane>
+        <GridPane GridPane.columnIndex="2" GridPane.rowIndex="0">
+            <Label text="Remove Products"/>
+        </GridPane>
+        <GridPane GridPane.columnIndex="0" GridPane.rowIndex="1">
+            <Button onAction="#addProduct" text="11" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <Button onAction="#addProduct" text="12" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+            <Button onAction="#addProduct" text="13" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+            <Button onAction="#addProduct" text="14" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+            <Button onAction="#addProduct" text="21" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <Button onAction="#addProduct" text="22" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button onAction="#addProduct" text="23" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button onAction="#addProduct" text="24" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button onAction="#addProduct" text="31" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <Button onAction="#addProduct" text="32" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button onAction="#addProduct" text="33" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button onAction="#addProduct" text="34" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Button onAction="#addProduct" text="41" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+            <Button onAction="#addProduct" text="42" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button onAction="#addProduct" text="43" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Button onAction="#addProduct" text="44" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Button onAction="#addProduct" text="51" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+            <Button onAction="#addProduct" text="52" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Button onAction="#addProduct" text="53" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Button onAction="#addProduct" text="54" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Button onAction="#addProduct" text="61" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+            <Button onAction="#addProduct" text="62" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Button onAction="#addProduct" text="63" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Button onAction="#addProduct" text="64" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+        </GridPane>
+        <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1"  >
+            <VBox>
+                <TextArea fx:id="ProductList" editable="false" prefHeight="449.0" prefWidth="598.0" />
+            </VBox>
+        </GridPane>
+        <GridPane GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <Button onAction="#RemoveProduct" text="11" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <Button onAction="#RemoveProduct" text="12" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+            <Button onAction="#RemoveProduct" text="13" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+            <Button onAction="#RemoveProduct" text="14" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+            <Button onAction="#RemoveProduct" text="21" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <Button onAction="#RemoveProduct" text="22" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button onAction="#RemoveProduct" text="23" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button onAction="#RemoveProduct" text="24" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button onAction="#RemoveProduct" text="31" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <Button onAction="#RemoveProduct" text="32" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button onAction="#RemoveProduct" text="33" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button onAction="#RemoveProduct" text="34" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Button onAction="#RemoveProduct" text="41" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+            <Button onAction="#RemoveProduct" text="42" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button onAction="#RemoveProduct" text="43" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Button onAction="#RemoveProduct" text="44" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Button onAction="#RemoveProduct" text="51" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+            <Button onAction="#RemoveProduct" text="52" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Button onAction="#RemoveProduct" text="53" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Button onAction="#RemoveProduct" text="54" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Button onAction="#RemoveProduct" text="61" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+            <Button onAction="#RemoveProduct" text="62" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Button onAction="#RemoveProduct" text="63" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Button onAction="#RemoveProduct" text="64" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+        </GridPane>
+        <GridPane GridPane.columnIndex="1" GridPane.rowIndex="2" >
+            <Label fx:id="validationErrorLabel" GridPane.rowIndex="1" />
+            <Label fx:id="SuccessNotification" GridPane.rowIndex="2" />
+        </GridPane>
+        <GridPane GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <Label fx:id="balanceAmountL" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <TextField fx:id="balanceAmountTf" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+            <Button onAction="#RemoveBalance" text="Remove Balance" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+            <Button onAction="#AddBalance" text="Add Balance" GridPane.columnIndex="3" GridPane.rowIndex="1"/>
+        </GridPane>
+        <GridPane GridPane.columnIndex="1" GridPane.rowIndex="4">
+            <GridPane>
+                <Button onAction="#openVendingMachine" text="Vending Machine"  GridPane.columnIndex="1"/>
+            </GridPane>
+        </GridPane>
+    </GridPane>
+</AnchorPane>
